@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "repository": "https://github.com/moon-gi-jeon/moonskill2",
+  "publication_status": "release",
+  "runtime_kind": "instruction-only",
+  "default_profile": "all",
+  "profiles": {
+    "all": [
+      "work-session",
+      "grill-me",
+      "grilling",
+      "verification-before-completion",
+      "frontend-design",
+      "diagnosing-bugs",
+      "api-tester",
+      "api-and-interface-design"
+    ],
+    "workflow-only": [
+      "work-session"
+    ]
+  },
+  "project_skill_path": ".agents/skills",
+  "global_install": false,
+  "automatic_execution_engine": false,
+  "skills": [
+    {
+      "name": "work-session",
+      "role": "workflow-entry",
+      "source": {
+        "kind": "original",
+        "license": "MIT"
+      },
+      "dependencies": [],
+      "optional_supporting_skills": [
+        "grill-me",
+        "grilling",
+        "verification-before-completion",
+        "frontend-design",
+        "diagnosing-bugs",
+        "api-tester",
+        "api-and-interface-design"
+      ],
+      "changes": [
+        "Original plan-first bounded workflow; integrated requirements, owner questions/replies, execution plan and progress/evidence in PLAN; consequential DECISIONS; conditional question strategy and four-item stage reports.",
+        "Korean reports and working documents; independent expected results for consequential outputs; actual environment bind/port/path/manual end-to-end review."
+      ],
+      "files": {
+        "SKILL.md": "92ea94d5efbab76bdf522d8baa839b86d5ea2de534446cacd11c9b2f7bb2f4e5",
+        "assets/DECISIONS.template.md": "48366d5aab4933bd739104e28dbb4257c95bbe9558ce1b0d9fa8846aa8812f3c",
+        "assets/PLAN.template.md": "54592a68f43c9aefbd2e23a72d331b235e18e4543a21643cec03e6e7ea2b1a29",
+        "references/conditional-guidance.md": "5b8ed51ba829ce9dc12a81021ef24c14f3f37484b5e581f5956961774c3fd700",
+        "references/question-strategy.md": "4ac3512f6fbda3488dc6735b7c5b06e22bf459280f19f1441557be6b6295d8ab"
+      }
+    },
+    {
+      "name": "grill-me",
+      "role": "conditional-support",
+      "dependencies": [
+        "grilling"
+      ],
+      "source": {
+        "repository": "mattpocock/skills",
+        "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+        "license": "MIT",
+        "original_skill_url": "https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/productivity/grill-me/SKILL.md"
+      },
+      "changes": [
+        "Replaced host-specific wrapper with a relative read of sibling grilling; removed Claude-only frontmatter; retained explicit invocation policy from existing Codex metadata."
+      ],
+      "files": {
+        "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "8d03bc9d9a05d799e581a1add9a0aadc401c72c9c4d3b2731484a913853b5886",
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      }
+    },
+    {
+      "name": "grilling",
+      "role": "conditional-support",
+      "dependencies": [],
+      "source": {
+        "repository": "mattpocock/skills",
+        "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+        "license": "MIT",
+        "original_skill_url": "https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/productivity/grilling/SKILL.md"
+      },
+      "changes": [
+        "Limit interview to material task decisions; inspect local facts first; make delegation conditional on available permitted tools; continue authorized work after decisions are answered.",
+        "Bound questions to material gaps; preserve the initial PLAN approval gate; remove leading yes/no wording and repeated optional branching."
+      ],
+      "files": {
+        "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "eef945a3e1670f8da63c3c9d7b7c7e72e4db68644cdd77b9b381eac581fdfa94",
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      }
+    },
+    {
+      "name": "verification-before-completion",
+      "role": "conditional-support",
+      "dependencies": [],
+      "source": {
+        "repository": "obra/superpowers",
+        "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+        "license": "MIT",
+        "original_skill_url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/verification-before-completion/SKILL.md"
+      },
+      "changes": [
+        "Add task-scoped validation guidance; no zero-test/fully-skipped success; no new tooling merely to satisfy a generic checklist.",
+        "Condense to claim-scoped current evidence; reuse unchanged relevant results; no full rerun per message, delegation gate, or destructive red-green ritual.",
+        "Integrate compact progress/evidence in PLAN or an existing equivalent; do not create a separate worklog."
+      ],
+      "files": {
+        "LICENSE.upstream.txt": "760a1b6a1be504193f2049b8062195a9e8d26b2152e9f3a7678c9eab206fb0a4",
+        "SKILL.md": "45876e7b3fdac5ad3e41f15edad8259cafc5cdb703910188aa83bbbb67974bc7"
+      }
+    },
+    {
+      "name": "frontend-design",
+      "role": "conditional-support",
+      "dependencies": [],
+      "source": {
+        "repository": "anthropics/skills",
+        "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+        "license": "Apache-2.0",
+        "original_skill_url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/frontend-design/SKILL.md"
+      },
+      "changes": [
+        "Retain design guidance; replace automated screenshot review with participant manual preview; prioritize actual task workflow over visual expansion.",
+        "Retain deliberate design, readable interaction and accessibility; remove fictional client history and unconditional design passes; honor actual functionality and manual preview."
+      ],
+      "files": {
+        "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+        "SKILL.md": "a27849b19a8076ac9448d508ea96f5b84816110d1bd03f6537c342b3e1190bd6"
+      }
+    },
+    {
+      "name": "diagnosing-bugs",
+      "role": "conditional-support",
+      "dependencies": [],
+      "source": {
+        "repository": "mattpocock/skills",
+        "commit": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+        "license": "MIT",
+        "original_skill_url": "https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/engineering/diagnosing-bugs/SKILL.md"
+      },
+      "changes": [
+        "Replace headless-browser/HITL script requirements with local CLI/HTTP tests and participant manual preview; restrict load and external operations.",
+        "Use observed failure, task-sized reproduction and meaningful hypotheses; remove fixed repetition counts and absolute loop/minimization prerequisites; stop unchanged attempts.",
+        "Integrate compact progress/evidence in PLAN or an existing equivalent; do not create a separate worklog."
+      ],
+      "files": {
+        "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+        "SKILL.md": "80d34c71c3ec5a5fba61461c8665b2da07cd6f5a483467a281cee92295df04e2",
+        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b"
+      }
+    },
+    {
+      "name": "api-tester",
+      "role": "conditional-support",
+      "dependencies": [],
+      "source": {
+        "repository": "RightNow-AI/openfang",
+        "commit": "acf2587e46be174c10200489c9a2d23a39a98aeb",
+        "license": "MIT/Apache-2.0",
+        "original_skill_url": "https://github.com/RightNow-AI/openfang/blob/acf2587e46be174c10200489c9a2d23a39a98aeb/crates/openfang-skills/bundled/api-tester/SKILL.md"
+      },
+      "changes": [
+        "Restrict to task-authorized business API; remove rapid rate-limit probing, secret-bearing verbose traces and alternate-network advice; no external model API.",
+        "Derive checks and status expectations from the actual contract; authentication/pagination/GraphQL/idempotency remain conditional; do not install example tools."
+      ],
+      "files": {
+        "LICENSE-APACHE.txt": "81e6f7c97b1a4dc234defbdc41ef2368f1068f18c1ff10b7b7ebcc71bb21137f",
+        "LICENSE-MIT.txt": "32a1b708dae9479f646879c2f530dd9a694b466ddf43e8f00089eba56f0e34ce",
+        "SKILL.md": "b4e355f77f9e318aee458cc08b06b1d9002e688a990e7658eef41395169468f2"
+      }
+    },
+    {
+      "name": "api-and-interface-design",
+      "role": "conditional-support",
+      "dependencies": [],
+      "source": {
+        "repository": "addyosmani/agent-skills",
+        "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+        "license": "MIT",
+        "original_skill_url": "https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/api-and-interface-design/SKILL.md"
+      },
+      "changes": [
+        "Adapt contract-first API/interface guidance to task-sized CRUD, validation, storage and frontend integration; make pagination, idempotency infrastructure and versioning conditional; use local CLI/HTTP checks and participant manual preview; no external AI or global configuration."
+      ],
+      "files": {
+        "LICENSE.upstream.txt": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+        "SKILL.md": "a4e11e58b9334a98ac9c6828697f61a244f8d6166f4d55f173b5e31275c0874f"
+      }
+    }
+  ],
+  "package_files": {
+    "LICENSE": "f81c3cc330db4a965b9773951a6b2d6a5cc1a530be15eb407f965360d331158d",
+    "README.md": "0442957a97ee43eeccb84a770606fa3333ca8e228b5e376b1fe61cd0646e5c7a",
+    "SOURCES.md": "daeee0e5f2c3e4c6ae4b4285a0e7a6d8a74da2ea92658ebb43b1b86a99ebf045",
+    "THIRD_PARTY_NOTICES.md": "cd58b459d1422f43b632abbd34512ff9acaae5ac25ed76742cc6489cff8a299d",
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+  },
+  "documentation": {
+    "primary": "PLAN.md",
+    "decisions": "DECISIONS.md",
+    "separate_worklog": false,
+    "owner_questions_and_answers": "PLAN.md"
+  },
+  "language": "ko"
+}
