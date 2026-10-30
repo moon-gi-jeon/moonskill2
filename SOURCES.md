@@ -8,6 +8,8 @@ work-session 지침과 PLAN·DECISIONS 템플릿은 독자 작성했다. 요구�
 
 보조 Skills는 아래 원본의 수정판이며 원저작자의 공식 배포·보증을 의미하지 않는다. 다음 표는 원저작 출처와 수정 방향을 요약하고, manifest의 changes는 현재 수정 내역, files는 현재 배포 파일의 SHA-256을 기록한다. 각 폴더의 원본 라이선스를 유지한다.
 
+1.1.0에서는 실제 과제와 위험에 따른 경로 선택, 조건부 읽기 전용 독립 리뷰, 도구 부재·오류 시 순차 검토/직접 검증, 실제 중단 시 PLAN 안의 상태 스냅샷과 재개 검증을 독자 작성하여 추가했다. 필수 새 도구·추가 Skill·전역 설정은 없다. 세부 변경은 CHANGELOG.md에 기록한다.
+
 | Skill | 원본 | 커밋 | 라이선스 | 수정 |
 |---|---|---|---|---|
 | grill-me | [mattpocock/skills](https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/productivity/grill-me/SKILL.md) | `59db609eb1e18aaf59b63284d0e52255aff0c63c` | MIT | Replaced host-specific wrapper with a relative read of sibling grilling; removed Claude-only frontmatter; retained explicit invocation policy from existing Codex metadata. |

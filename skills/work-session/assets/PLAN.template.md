@@ -12,6 +12,7 @@ Write the actual document in Korean. Preserve exact file paths, identifiers and 
 - Current revision and status: draft / awaiting review / approved / changed:
 - Actual user approval or existing delegation basis:
 - Current progress / mandatory blockers / next action:
+- Actual output type / consequential failure risks and relevant checks:
 
 ## Requirements and checks
 
@@ -36,6 +37,8 @@ The user sends the question and relays the actual answer. Record only the import
 |---|---|---|---|---|
 
 Update only affected rows. Keep meaningful milestone history compact; do not duplicate rules already recorded above or paste full logs. The absence of a check is not a pass.
+
+If an independent review is useful, record its actual scope, material findings, adopted/rejected disposition and subsequent execution evidence here. If unsupported, note the fallback once. On a real interruption, this section also holds the current saved state, last valid check and next action; no separate handoff file is required.
 
 ## Unknowns and applicability
 

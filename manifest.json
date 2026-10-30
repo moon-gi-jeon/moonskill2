@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repository": "https://github.com/moon-gi-jeon/moonskill2",
   "publication_status": "release",
   "runtime_kind": "instruction-only",
@@ -43,14 +43,18 @@
       ],
       "changes": [
         "Original plan-first bounded workflow; integrated requirements, owner questions/replies, execution plan and progress/evidence in PLAN; consequential DECISIONS; conditional question strategy and four-item stage reports.",
-        "Korean reports and working documents; independent expected results for consequential outputs; actual environment bind/port/path/manual end-to-end review."
+        "Korean reports and working documents; independent expected results for consequential outputs; actual environment bind/port/path/manual end-to-end review.",
+        "Route by actual task and consequential risk; first real complete flow; optional read-only independent reviews with no-tool/denial/error fallback; verified state resume within PLAN; no extra state engine or fixed stage sequence."
       ],
       "files": {
-        "SKILL.md": "92ea94d5efbab76bdf522d8baa839b86d5ea2de534446cacd11c9b2f7bb2f4e5",
+        "SKILL.md": "089b100a5fd7b195304cfd582cdc2fd3b41418c2902a16fa91d00c852bf0ef0a",
         "assets/DECISIONS.template.md": "48366d5aab4933bd739104e28dbb4257c95bbe9558ce1b0d9fa8846aa8812f3c",
-        "assets/PLAN.template.md": "54592a68f43c9aefbd2e23a72d331b235e18e4543a21643cec03e6e7ea2b1a29",
+        "assets/PLAN.template.md": "4092e3c8b8316f123763b02f3b44e1a21654846957f256eee42ff65b42924aac",
         "references/conditional-guidance.md": "5b8ed51ba829ce9dc12a81021ef24c14f3f37484b5e581f5956961774c3fd700",
-        "references/question-strategy.md": "4ac3512f6fbda3488dc6735b7c5b06e22bf459280f19f1441557be6b6295d8ab"
+        "references/parallel-review.md": "05f15ee43299f32e613de00373dbe54bb4e23eb474fc8567bfb02a8e3b1183cf",
+        "references/question-strategy.md": "4ac3512f6fbda3488dc6735b7c5b06e22bf459280f19f1441557be6b6295d8ab",
+        "references/resume.md": "4bd0b75a530f0451656632275876c4cc4dfa77714bfb1e5f7bb56546ba345b83",
+        "references/task-routing.md": "5f5c0787df67522ac37bb8b8dc82fb107dc7ee80f55a113fe01328f12244d473"
       }
     },
     {
@@ -194,11 +198,12 @@
     }
   ],
   "package_files": {
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "CHANGELOG.md": "e3facec622c969634e4f05f8c2da0a3b3b7777b6f70ccab83301f5af3fd9901f",
     "LICENSE": "f81c3cc330db4a965b9773951a6b2d6a5cc1a530be15eb407f965360d331158d",
-    "README.md": "0442957a97ee43eeccb84a770606fa3333ca8e228b5e376b1fe61cd0646e5c7a",
-    "SOURCES.md": "daeee0e5f2c3e4c6ae4b4285a0e7a6d8a74da2ea92658ebb43b1b86a99ebf045",
-    "THIRD_PARTY_NOTICES.md": "cd58b459d1422f43b632abbd34512ff9acaae5ac25ed76742cc6489cff8a299d",
-    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    "README.md": "6fbd3d218ff79e94974e5effa2c3c07d1940cdab96485f296d5b47bc88ec4835",
+    "SOURCES.md": "81fff20489d5b4589b0782c1c911e35530d054bf80b94aa166cf5dce8dc06c0b",
+    "THIRD_PARTY_NOTICES.md": "cd58b459d1422f43b632abbd34512ff9acaae5ac25ed76742cc6489cff8a299d"
   },
   "documentation": {
     "primary": "PLAN.md",
