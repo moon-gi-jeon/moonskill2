@@ -38,7 +38,7 @@ The user sends the question and relays the actual answer. Record only the import
 
 Update only affected rows. Keep meaningful milestone history compact; do not duplicate rules already recorded above or paste full logs. The absence of a check is not a pass.
 
-If an independent review is useful, record its actual scope, material findings, adopted/rejected disposition and subsequent execution evidence here. If unsupported, note the fallback once. On a real interruption, this section also holds the current saved state, last valid check and next action; no separate handoff file is required.
+If an independent review is useful, record its actual scope, material findings, adopted/rejected disposition and subsequent execution evidence here. If unsupported, note the fallback once. On a real interruption, keep the current saved state, last valid check and next action here, or link a short HANDOFF if that helps the receiving session. Keep this document canonical and avoid maintaining duplicate status tables. Distinguish PASS / FAIL / NOT_RUN / HUMAN_CHECK / NOT_APPLICABLE / STALE when applicable.
 
 ## Unknowns and applicability
 

@@ -21,3 +21,5 @@ work-session 지침과 PLAN·DECISIONS 템플릿은 독자 작성했다. 요구�
 | api-and-interface-design | [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills/blob/aeac41d4d005999432bb7312f7ff06383a91d59d/skills/api-and-interface-design/SKILL.md) | `aeac41d4d005999432bb7312f7ff06383a91d59d` | MIT | Adapt contract-first API/interface guidance to task-sized CRUD, validation, storage and frontend integration; make pagination, idempotency infrastructure and versioning conditional; use local CLI/HTTP checks and participant manual preview; no external AI or global configuration. |
 
 각 배포 파일의 SHA-256은 manifest.json에 있다. 원본 커밋과 현재 수정 파일의 해시는 구분한다. 상세 수정 내용은 manifest의 changes에 기록한다.
+
+1.2.0에서는 역할별 책임과 기존 지침을 보존하는 AGENTS 포인터, 15개 단계·11개 유형별 요청 가이드, 선택형 작업 지도·검증 상태, 실제 전환 시 쓰는 HANDOFF 양식을 추가했다. 가이드·양식은 현재 사용자 요구를 바탕으로 범용 문구로 정리했으며, 비공개 조사 문서와 행사 고유 정보를 배포하지 않는다. 기존 보조 7종의 본문·원저작 고지는 유지한다.

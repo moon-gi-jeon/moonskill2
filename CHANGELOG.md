@@ -1,5 +1,13 @@
 # Changes
 
+## 1.2.0
+
+- Add a Korean prompt reference with 15 stage requests and 11 task-specific requests, plus a short root PROMPTS entry.
+- Add an AGENTS entry bridge with user/agent/task-owner/operator responsibilities and a non-destructive installation policy.
+- Support a short separate HANDOFF only for actual transfers when useful; retain PLAN as the canonical baseline and reuse existing records.
+- Add a selective workflow map and explicit evidence states, linked progressively from work-session.
+- Preserve eight Skills and all seven supporting Skill bodies; no new runtime, hook, MCP, model dependency or global settings.
+
 ## 1.1.0
 
 - Classify the actual output and consequential risks before selecting tools; keep routes conditional.

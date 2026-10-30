@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": "https://github.com/moon-gi-jeon/moonskill2",
   "publication_status": "release",
   "runtime_kind": "instruction-only",
@@ -44,17 +44,22 @@
       "changes": [
         "Original plan-first bounded workflow; integrated requirements, owner questions/replies, execution plan and progress/evidence in PLAN; consequential DECISIONS; conditional question strategy and four-item stage reports.",
         "Korean reports and working documents; independent expected results for consequential outputs; actual environment bind/port/path/manual end-to-end review.",
-        "Route by actual task and consequential risk; first real complete flow; optional read-only independent reviews with no-tool/denial/error fallback; verified state resume within PLAN; no extra state engine or fixed stage sequence."
+        "Route by actual task and consequential risk; first real complete flow; optional read-only independent reviews with no-tool/denial/error fallback; verified state resume within PLAN; no extra state engine or fixed stage sequence.",
+        "Add task-compatible AGENTS entry, 26 situation-specific user requests, selective workflow map, evidence states and optional transfer HANDOFF with canonical PLAN references; no new runtime or supporting Skill changes."
       ],
       "files": {
-        "SKILL.md": "089b100a5fd7b195304cfd582cdc2fd3b41418c2902a16fa91d00c852bf0ef0a",
         "assets/DECISIONS.template.md": "48366d5aab4933bd739104e28dbb4257c95bbe9558ce1b0d9fa8846aa8812f3c",
-        "assets/PLAN.template.md": "4092e3c8b8316f123763b02f3b44e1a21654846957f256eee42ff65b42924aac",
+        "assets/HANDOFF.template.md": "bd388070448a121026b18a0139459a7ffbd02dff218adb60b8ba980858638f81",
+        "assets/PLAN.template.md": "c1079e350f13e3b43d11f324c7cc7b5053a718e855e70afd53348b2e4519dc87",
         "references/conditional-guidance.md": "5b8ed51ba829ce9dc12a81021ef24c14f3f37484b5e581f5956961774c3fd700",
+        "references/evidence-status.md": "a1a4f3788c71ae0a31b4253b406c28123d19caac49b3eaec9366919c7ce36299",
         "references/parallel-review.md": "05f15ee43299f32e613de00373dbe54bb4e23eb474fc8567bfb02a8e3b1183cf",
+        "references/prompt-guide.md": "a7c7fd6d8fc5c4bef18225acacb67cfe03571c3c380aa296bbb752df481388d0",
         "references/question-strategy.md": "4ac3512f6fbda3488dc6735b7c5b06e22bf459280f19f1441557be6b6295d8ab",
-        "references/resume.md": "4bd0b75a530f0451656632275876c4cc4dfa77714bfb1e5f7bb56546ba345b83",
-        "references/task-routing.md": "5f5c0787df67522ac37bb8b8dc82fb107dc7ee80f55a113fe01328f12244d473"
+        "references/resume.md": "f9eafec6eebbc51df6c27e8a0456e8efa1c4d25b7a48e90f35cd400e5f83710a",
+        "references/task-routing.md": "5f5c0787df67522ac37bb8b8dc82fb107dc7ee80f55a113fe01328f12244d473",
+        "references/workflow-map.md": "2adf0348c68df4239d0e2cdb75f9b47d6bf873e33190bc2e462f1e058fd8eb7c",
+        "SKILL.md": "e6c40455fb3d52df11c7a5c6cd6abe6dc747242b3dda1b87269190e11f0377fc"
       }
     },
     {
@@ -73,9 +78,9 @@
         "Replaced host-specific wrapper with a relative read of sibling grilling; removed Claude-only frontmatter; retained explicit invocation policy from existing Codex metadata."
       ],
       "files": {
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
         "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
-        "SKILL.md": "8d03bc9d9a05d799e581a1add9a0aadc401c72c9c4d3b2731484a913853b5886",
-        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+        "SKILL.md": "8d03bc9d9a05d799e581a1add9a0aadc401c72c9c4d3b2731484a913853b5886"
       }
     },
     {
@@ -93,9 +98,9 @@
         "Bound questions to material gaps; preserve the initial PLAN approval gate; remove leading yes/no wording and repeated optional branching."
       ],
       "files": {
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
         "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
-        "SKILL.md": "eef945a3e1670f8da63c3c9d7b7c7e72e4db68644cdd77b9b381eac581fdfa94",
-        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+        "SKILL.md": "eef945a3e1670f8da63c3c9d7b7c7e72e4db68644cdd77b9b381eac581fdfa94"
       }
     },
     {
@@ -153,9 +158,9 @@
         "Integrate compact progress/evidence in PLAN or an existing equivalent; do not create a separate worklog."
       ],
       "files": {
+        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
         "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
-        "SKILL.md": "80d34c71c3ec5a5fba61461c8665b2da07cd6f5a483467a281cee92295df04e2",
-        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b"
+        "SKILL.md": "80d34c71c3ec5a5fba61461c8665b2da07cd6f5a483467a281cee92295df04e2"
       }
     },
     {
@@ -199,17 +204,24 @@
   ],
   "package_files": {
     ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
-    "CHANGELOG.md": "e3facec622c969634e4f05f8c2da0a3b3b7777b6f70ccab83301f5af3fd9901f",
+    "AGENTS.md": "b640a1022b2b6ef43391a7be7037e41f868b74cf88e02bc7ba9e30699c3ffdff",
+    "CHANGELOG.md": "5ac6ab1adf33bbef9970f264be7aec6a3c1142c4d9cd9bd59956be981160d26d",
     "LICENSE": "f81c3cc330db4a965b9773951a6b2d6a5cc1a530be15eb407f965360d331158d",
-    "README.md": "6fbd3d218ff79e94974e5effa2c3c07d1940cdab96485f296d5b47bc88ec4835",
-    "SOURCES.md": "81fff20489d5b4589b0782c1c911e35530d054bf80b94aa166cf5dce8dc06c0b",
+    "PROMPTS.md": "733e7aa593a19b04ec407387255e5b8ef040385dd065eaf4aa726b64b53cd103",
+    "README.md": "03f1391fb1f45f1acdeb8a65d95fcdcd71c368e13e7f38a6268bf644a63be137",
+    "SOURCES.md": "88359686f90a104754166b35c58225151433484e75aa6cff60c7803cee1a7b4f",
     "THIRD_PARTY_NOTICES.md": "cd58b459d1422f43b632abbd34512ff9acaae5ac25ed76742cc6489cff8a299d"
   },
   "documentation": {
     "primary": "PLAN.md",
     "decisions": "DECISIONS.md",
     "separate_worklog": false,
-    "owner_questions_and_answers": "PLAN.md"
+    "owner_questions_and_answers": "PLAN.md",
+    "prompt_entry": "PROMPTS.md",
+    "agent_entry": "AGENTS.md",
+    "prompt_reference": "skills/work-session/references/prompt-guide.md",
+    "conditional_handoff": "skills/work-session/assets/HANDOFF.template.md"
   },
-  "language": "ko"
+  "language": "ko",
+  "agent_entry_policy": "Task-scoped; inspect existing AGENTS, preserve original rules, merge only a needed non-conflicting pointer; explicit invocation fallback on conflict or restriction."
 }
