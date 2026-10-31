@@ -13,4 +13,4 @@ On resume, inspect the current files and applicable task stage before acting. A 
 
 Preserve prior meaningful decisions and superseding relationships. A resumed session does not by itself require another approval of the same unchanged plan. Ask when the approved scope or consequential assumptions changed. Do not resume automatically after the user has cancelled the task or after AI use is no longer permitted.
 
-For concise user requests, see [prompt guide 12 and 13](prompt-guide.md#request-12). The receiving session should also read applicable AGENTS guidance. A valid handoff does not prove that the host loaded the new session instructions automatically.
+The receiving session should also read applicable AGENTS guidance. A valid handoff does not prove that the host loaded the new session instructions automatically.

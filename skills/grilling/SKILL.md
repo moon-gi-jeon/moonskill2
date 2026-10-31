@@ -9,7 +9,7 @@ Inspect facts in the README and current files before asking. Ask about decisions
 
 Interview the user until material task decisions are clear enough to proceed. Map this as a **design tree**: every decision branches into the decisions that hang off it.
 
-Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
+Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Select only the unresolved questions that materially affect the goal, business rules, acceptance criteria or a consequential tradeoff. Ask a short prioritized round with supported recommendations; do not expand all branches merely because they exist. Wait only for decisions that the user needs to make, while continuing independent authorized work.
 
 Format a round like so:
 
@@ -27,8 +27,8 @@ Format a round like so:
 
 Give a recommendation when supported, and make it easy to accept, reject or revise. Do not phrase a genuine tradeoff as a leading yes/no question.
 
-Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
+Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the relevant gaps; ask another round only if a remaining consequential decision changes the next work. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
 
-Finding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment, inspect it with available permitted tools. Use a subagent only if the host permits it and the task benefits; do not ask the user for facts you can read yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. The _decisions_ are the user's: put each to them and wait.
+Finding _facts_ is your job, never the user's. When a frontier question needs a fact from the environment, inspect it with available permitted tools. Use a subagent only if the host permits it and the task benefits; do not ask the user for facts you can read yourself. Don't block on it: a running exploration is an unsettled prerequisite, so only the questions downstream of it wait for the sub-agent to report; ask the rest of the frontier now. Take unresolved consequential scope, policy and acceptance choices to the user. Routine reversible implementation choices within the approved plan are delegated to the agent: choose and continue, recording a meaningful rationale when needed. Do not turn each technical choice or stage transition into another approval request.
 
 The interview is done when material decisions are settled and remaining assumptions are disclosed. Respect the current plan approval state, then continue authorized work. Do not require exhaustive exploration of optional branches or reopen an answered question without new information.

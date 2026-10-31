@@ -1,5 +1,13 @@
 # Changes
 
+## 1.2.1
+
+- Move all 26 prompt examples to root PROMPTS.md as a human-only IDE reference; remove guide routing from Skills, AGENTS and workflow references.
+- Document separate guide placement and safe migration of the old packaged guide and entry block.
+- Bound grilling to consequential decisions and continue delegated implementation without routine re-approval.
+- Make the API example contract-dependent and the progress example continue small approved slices.
+- Require an explicit read of installed entry guidance; preserve existing task rules and conflicting/customized files.
+
 ## 1.2.0
 
 - Add a Korean prompt reference with 15 stage requests and 11 task-specific requests, plus a short root PROMPTS entry.

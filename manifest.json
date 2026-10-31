@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "repository": "https://github.com/moon-gi-jeon/moonskill2",
   "publication_status": "release",
   "runtime_kind": "instruction-only",
@@ -45,7 +45,8 @@
         "Original plan-first bounded workflow; integrated requirements, owner questions/replies, execution plan and progress/evidence in PLAN; consequential DECISIONS; conditional question strategy and four-item stage reports.",
         "Korean reports and working documents; independent expected results for consequential outputs; actual environment bind/port/path/manual end-to-end review.",
         "Route by actual task and consequential risk; first real complete flow; optional read-only independent reviews with no-tool/denial/error fallback; verified state resume within PLAN; no extra state engine or fixed stage sequence.",
-        "Add task-compatible AGENTS entry, 26 situation-specific user requests, selective workflow map, evidence states and optional transfer HANDOFF with canonical PLAN references; no new runtime or supporting Skill changes."
+        "Add task-compatible AGENTS entry, 26 situation-specific user requests, selective workflow map, evidence states and optional transfer HANDOFF with canonical PLAN references; no new runtime or supporting Skill changes.",
+        "Move prompt reference outside Skills; remove automatic guide reading, recommendation and template output; keep task workflow and actual stage reports."
       ],
       "files": {
         "assets/DECISIONS.template.md": "48366d5aab4933bd739104e28dbb4257c95bbe9558ce1b0d9fa8846aa8812f3c",
@@ -54,12 +55,11 @@
         "references/conditional-guidance.md": "5b8ed51ba829ce9dc12a81021ef24c14f3f37484b5e581f5956961774c3fd700",
         "references/evidence-status.md": "a1a4f3788c71ae0a31b4253b406c28123d19caac49b3eaec9366919c7ce36299",
         "references/parallel-review.md": "05f15ee43299f32e613de00373dbe54bb4e23eb474fc8567bfb02a8e3b1183cf",
-        "references/prompt-guide.md": "a7c7fd6d8fc5c4bef18225acacb67cfe03571c3c380aa296bbb752df481388d0",
         "references/question-strategy.md": "4ac3512f6fbda3488dc6735b7c5b06e22bf459280f19f1441557be6b6295d8ab",
-        "references/resume.md": "f9eafec6eebbc51df6c27e8a0456e8efa1c4d25b7a48e90f35cd400e5f83710a",
+        "references/resume.md": "9529adb16a53306367ef0ea702c9255b0e042a343349a011d3556009e830c999",
         "references/task-routing.md": "5f5c0787df67522ac37bb8b8dc82fb107dc7ee80f55a113fe01328f12244d473",
-        "references/workflow-map.md": "2adf0348c68df4239d0e2cdb75f9b47d6bf873e33190bc2e462f1e058fd8eb7c",
-        "SKILL.md": "e6c40455fb3d52df11c7a5c6cd6abe6dc747242b3dda1b87269190e11f0377fc"
+        "references/workflow-map.md": "0ce9c9ad9335ece754c44fc0e5f4f0e41b251bdd2995d45208c4a1abdd3847a3",
+        "SKILL.md": "883cc09ddb8e19648d03a062e2c4b81ac265283d8df3dc0ffe8595db9d51b164"
       }
     },
     {
@@ -95,12 +95,13 @@
       },
       "changes": [
         "Limit interview to material task decisions; inspect local facts first; make delegation conditional on available permitted tools; continue authorized work after decisions are answered.",
-        "Bound questions to material gaps; preserve the initial PLAN approval gate; remove leading yes/no wording and repeated optional branching."
+        "Bound questions to material gaps; preserve the initial PLAN approval gate; remove leading yes/no wording and repeated optional branching.",
+        "Ask only consequential unresolved choices; ordinary approved implementation and stage transitions continue without extra approval."
       ],
       "files": {
         "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b",
         "LICENSE.upstream.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
-        "SKILL.md": "eef945a3e1670f8da63c3c9d7b7c7e72e4db68644cdd77b9b381eac581fdfa94"
+        "SKILL.md": "90e712a362fa62af1fccc7bd1a98d0baffd7284a1e02f759ab91fcde309e2aa3"
       }
     },
     {
@@ -204,12 +205,12 @@
   ],
   "package_files": {
     ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
-    "AGENTS.md": "b640a1022b2b6ef43391a7be7037e41f868b74cf88e02bc7ba9e30699c3ffdff",
-    "CHANGELOG.md": "5ac6ab1adf33bbef9970f264be7aec6a3c1142c4d9cd9bd59956be981160d26d",
+    "AGENTS.md": "c1dbaf31c0eb8816cb908e14711e4158da50b812e443665fe5a22025c70f43a7",
+    "CHANGELOG.md": "048f8382f62e92f2dccda5cb21621b9a933fe921c6d3757ed1a9cf34e83fae50",
     "LICENSE": "f81c3cc330db4a965b9773951a6b2d6a5cc1a530be15eb407f965360d331158d",
-    "PROMPTS.md": "733e7aa593a19b04ec407387255e5b8ef040385dd065eaf4aa726b64b53cd103",
-    "README.md": "03f1391fb1f45f1acdeb8a65d95fcdcd71c368e13e7f38a6268bf644a63be137",
-    "SOURCES.md": "88359686f90a104754166b35c58225151433484e75aa6cff60c7803cee1a7b4f",
+    "PROMPTS.md": "31329c38bf82a9f27c106afaa525805d2ae18baf7243389f6c837a4e2387029e",
+    "README.md": "693a7a487d2aab64b77a2785684e28648e0a630454853c4d0d6484a4ea487860",
+    "SOURCES.md": "1589c995f68ebf2fae91d3e23d2a19e5c367cec08853a810f7b3855f6ec3afed",
     "THIRD_PARTY_NOTICES.md": "cd58b459d1422f43b632abbd34512ff9acaae5ac25ed76742cc6489cff8a299d"
   },
   "documentation": {
@@ -219,9 +220,18 @@
     "owner_questions_and_answers": "PLAN.md",
     "prompt_entry": "PROMPTS.md",
     "agent_entry": "AGENTS.md",
-    "prompt_reference": "skills/work-session/references/prompt-guide.md",
-    "conditional_handoff": "skills/work-session/assets/HANDOFF.template.md"
+    "conditional_handoff": "skills/work-session/assets/HANDOFF.template.md",
+    "prompt_reference_audience": "human",
+    "prompt_automatic_loading": false,
+    "user_guide_install_path": "docs/moonskill2/PROMPTS.md"
   },
   "language": "ko",
-  "agent_entry_policy": "Task-scoped; inspect existing AGENTS, preserve original rules, merge only a needed non-conflicting pointer; explicit invocation fallback on conflict or restriction."
+  "agent_entry_policy": "Task-scoped; inspect existing AGENTS, preserve original rules, merge only a needed non-conflicting pointer; explicit invocation fallback on conflict or restriction.",
+  "upgrade_notes": {
+    "from": "1.2.0",
+    "retired_skill_files": [
+      "work-session/references/prompt-guide.md"
+    ],
+    "policy": "Remove only verified unmodified old package file after user guide is safely placed; preserve custom/unknown files and unrelated AGENTS content."
+  }
 }
