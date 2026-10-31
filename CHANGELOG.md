@@ -1,5 +1,11 @@
 # Changes
 
+## 1.2.2
+
+- Expand the human prompt guide with a five-step post-install start: actual sources and plan review, concrete owner questions, real reply integration, user decisions, then explicit plan approval and incremental execution.
+- Add unanswered-question handling and distinguish pre-approval planning from updates within already approved work; map replies to requirements, scope, assumptions, implementation and checks.
+- Retain all 26 situational requests and human-only guide placement; no Skill bodies, automatic guide loading, tools or runtime changes.
+
 ## 1.2.1
 
 - Move all 26 prompt examples to root PROMPTS.md as a human-only IDE reference; remove guide routing from Skills, AGENTS and workflow references.

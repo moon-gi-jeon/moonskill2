@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.2.1",
+  "version": "1.2.2",
   "repository": "https://github.com/moon-gi-jeon/moonskill2",
   "publication_status": "release",
   "runtime_kind": "instruction-only",
@@ -206,10 +206,10 @@
   "package_files": {
     ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
     "AGENTS.md": "c1dbaf31c0eb8816cb908e14711e4158da50b812e443665fe5a22025c70f43a7",
-    "CHANGELOG.md": "048f8382f62e92f2dccda5cb21621b9a933fe921c6d3757ed1a9cf34e83fae50",
+    "CHANGELOG.md": "3e51970a67d5e77a9c1f029cffaa29bc4d319f29fd9ae5b72e6e5661b6cee1ec",
     "LICENSE": "f81c3cc330db4a965b9773951a6b2d6a5cc1a530be15eb407f965360d331158d",
-    "PROMPTS.md": "31329c38bf82a9f27c106afaa525805d2ae18baf7243389f6c837a4e2387029e",
-    "README.md": "693a7a487d2aab64b77a2785684e28648e0a630454853c4d0d6484a4ea487860",
+    "PROMPTS.md": "b04cebdfcf7cd7eca568815e5c368e43471762727805da457374677ac1dabe50",
+    "README.md": "d6197509a74b3dc1b8f34e83b064e9c79f3b7239149633b1ae6e7de3832063a3",
     "SOURCES.md": "1589c995f68ebf2fae91d3e23d2a19e5c367cec08853a810f7b3855f6ec3afed",
     "THIRD_PARTY_NOTICES.md": "cd58b459d1422f43b632abbd34512ff9acaae5ac25ed76742cc6489cff8a299d"
   },
@@ -223,7 +223,8 @@
     "conditional_handoff": "skills/work-session/assets/HANDOFF.template.md",
     "prompt_reference_audience": "human",
     "prompt_automatic_loading": false,
-    "user_guide_install_path": "docs/moonskill2/PROMPTS.md"
+    "user_guide_install_path": "docs/moonskill2/PROMPTS.md",
+    "prompt_onboarding": "Five conditional user steps after installation: source review, owner questions, reply integration, user decisions, explicit plan approval; retain human-only reading."
   },
   "language": "ko",
   "agent_entry_policy": "Task-scoped; inspect existing AGENTS, preserve original rules, merge only a needed non-conflicting pointer; explicit invocation fallback on conflict or restriction.",
